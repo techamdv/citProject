@@ -30,6 +30,8 @@
     <!-- my slider -->
     <!-- Bootstrap -->
     <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <!-- FontAwesome -->
     <link rel="stylesheet" href="plugins/fontawesome/css/all.min.css"> 
     <!-- Animation -->
@@ -52,11 +54,111 @@
         }
         
         
+        .modal-content {
+            /* height: 500px; */
+            width: 100%;
+            height: 100%;
+        }
+
+        #btnSubmitModalPopup {
+            width: 100%;
+            padding-top: 9px !important;
+            height: 0px;
+        }
+
+        .form-control {
+            border-radius: 5px;
+            padding-left: 8px;
+            ;
+            height: 32px;
+        }
+
+        .form-select {
+            height: 38px;
+        }
+
+        .properties__card {
+            box-shadow: 0px 6px 6px 4px rgb(2 25 65 / 8%);
+            border-radius: 10px;
+        }
+
+        .properties__caption {
+            padding: 15px;
+        }
        
     </style>  
 </head>
 
 <body>
+        <!-- Modal starts here -->
+
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered col-sm-6">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Apply For Internship</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form class="row g-3">
+                            <div class="mb-3">
+                                <label for="validationDefault01" class="form-label">First name</label>
+                                <input type="text" class="form-control" id="validationDefault01" pattern="[A-Za-z]+"
+                                    title="Enter valid name" required>
+                                <div class="invalid-feedback">
+                                    Please enter a valid name
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="validationDefault02" class="form-label">Course</label>
+                                <select class="form-select form-select-lg" id="validationDefault02" required>
+                                    <option selected value="">Select Course</option>
+                                    <option value="1">Python</option>
+                                    <option value="2">Javascript</option>
+                                    <option value="3">Java</option>
+                                    <option value="4">AI</option>
+                                    <option value="5">PHP</option>
+                                    <option value="6">ML</option>
+                                </select>
+                                <!-- <div class="invalid-feedback"  style="display: none;">
+                                    Please select a valid Courses
+                                </div> -->
+                            </div>
+                            <div class="mb-3">
+                                <label for="validationDefault07" class="form-label">Branch</label>
+                                <select class="form-select form-select-lg" id="validationDefault07">
+                                    <option selected disabled value="">Select Branch</option>
+                                    <option value="1">Greater Noida</option>
+                                    <option value="2">Mohannagar</option>
+    
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label for="validationDefault03" class="form-label">Email:</label>
+                                <input type="text" class="form-control" id="validationDefault03"
+                                    pattern="^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+$" title="Please enter a valid email" required>
+                                <div class="invalid-feedback">
+                                    Please enter a valid email address.
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="validationDefault04" class="form-label">Phone</label>
+                                <input type="text" class="form-control" id="validationDefault04" pattern="[0-9]{10}"
+                                    title="Please enter a 10-digit phone number" required>
+                                <div class="invalid-feedback">
+                                    Please enter a valid 10-digit phone number.
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <button id="btnSubmitModalPopup" class="btn btn-primary" type="submit">Submit form</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal ends here -->
+    
     <!-- ? Preloader Start -->
     <div id="preloader-active">
         <div class="preloader d-flex align-items-center justify-content-center">
@@ -96,7 +198,7 @@
                                                 <li><a href="contact.html">Contact Us</a></li>
                                                 <!-- Button -->
                                                 <li class="button-header" >
-                                                    <button class="btn btn-lg btn3" style="width: 100% !important;height: 50px; font-size:larger; padding: 2px !important;" >Apply for Internship </button>
+                                                    <button id="btnApplyForInternship" class="btn btn-lg btn3" style="width: 100% !important;height: 50px; font-size:larger; padding: 2px !important;" >Apply for Internship </button>
                                                 </li>
                                             </ul>
                                         </nav>
@@ -1327,6 +1429,9 @@
 
   <!-- initialize jQuery Library -->
   <script src="plugins/jQuery/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+  crossorigin="anonymous"></script>
   <!-- Bootstrap jQuery -->
   <!-- <script src="plugins/bootstrap/bootstrap.min.js" defer></script> -->
   <!-- Slick Carousel -->
@@ -1387,6 +1492,14 @@
 <!-- Jquery Plugins, main Jquery -->	
 <script src="./assets/js/plugins.js"></script>
 <script src="./assets/js/main.js"></script>
+<script>
+    $(document).ready(function () {
+            $('#btnApplyForInternship').click(function () {
+                debugger
+                $('#exampleModal').modal('show');
+            });
+        });
+</script>
 
 </body>
 </html>
