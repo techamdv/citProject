@@ -369,7 +369,7 @@
                                                 <li><a href="#contactUs">Contact Us</a></li>
                                                 <!-- Button -->
                                                 <li class="button-header">
-                                                    <button id="btnApplyForInternship" class="btn btn-lg btn3"
+                                                    <button onclick="internFormShow()" class="btn btn-lg btn3"
                                                         style="width: 100% !important;background-color: white  ;color: rgb(13, 0, 255) ;border-color: rgb(255, 0, 0);  height: 50px; font-size:larger; padding: 2px !important;">Apply
                                                         for Internship </button>
                                                 </li>
@@ -1317,14 +1317,14 @@
     <script src="./assets/js/main.js"></script>
     <script>
         $(document).ready(function () {
-            $('#btnApplyForInternship').click(function () {
-                $('#internshipModal').modal('show');
-            });
             
             $('.btnContactUs').click(function () {
                 $('#contactUsModal').modal('show');
             });
         });
+        function internFormShow(){
+            $('#internshipModal').modal('show');
+            }
     </script>
 
 
