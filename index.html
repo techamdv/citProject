@@ -3,7 +3,6 @@
 
 <head>
     <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>Foster AI</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -26,6 +25,8 @@
     <link rel="stylesheet" href="assets/css/slick.css">
     <link rel="stylesheet" href="assets/css/nice-select.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <!-- FONT AWESOME -->
+    <script src="https://kit.fontawesome.com/ced344d9de.js" crossorigin="anonymous"></script>
 
     <!-- my slider -->
     <!-- Bootstrap -->
@@ -44,6 +45,9 @@
     <!-- Template styles-->
     <link rel="stylesheet" href="css/style.css">
     <style>
+        .features-caption p{
+            font-family: cursive;
+        }
         .target_item{
             font-weight: bold;
         }
@@ -216,6 +220,52 @@
             flex-direction: row;
             flex-wrap: nowrap;
         }
+        .left-content1 div div img{
+            width: 16px;
+        }
+        .facultyAcc{
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            margin-top: -6px;
+            height: 4vh;
+        }
+        .facultyAcc i{
+            display: block;
+            font-size: x-large;
+            /* color: grey; */
+            padding: 4px;
+            /* align-items: center; */
+            
+            justify-items: center;
+            justify-content: space-between;
+            align-self: center;
+
+
+        }
+        .facultyAcc i:hover{
+            font-size: xx-large;
+            margin-top:-5px;
+        }
+        #social-linkedIn{
+            color: blue;
+        }
+        #social-facebook{
+            color: darkblue;
+        }
+        #social-whatsapp{
+            color: green;
+        }
+        #social-insta{
+            color: rgb(208, 30, 92);
+        }
+        #social-twitter{
+            color: black;
+        }
+        .footer-tittle ul{
+            padding-left: 0px;
+        }
+
     </style>
 </head>
 
@@ -249,9 +299,6 @@
                             <div class="invalid-feedback">
                                 Please enter a valid course
                             </div>
-                            <!-- <div class="invalid-feedback"  style="display: none;">
-                                    Please select a valid Courses
-                                </div> -->
                         </div>
                         <div class="mb-3">
                             <label for="validationDefault03" class="form-label">Email:</label>
@@ -352,7 +399,7 @@
         <div class="header-area header-transparent" >
             <div class="main-header ">
                 <div class="header-bottom  header-sticky">
-                    <div class="container-fluid" >
+                    <div class="container-fluid" style="height: 100px;" >
                         <div class="row align-items-center">
                             <!-- Logo -->
                             <div class="col-xl-2 col-lg-2">
@@ -394,32 +441,10 @@
         <!-- Header End -->
     </header>
     <main>
-        <!--? slider Area Start-->
-        <!-- <section class="slider-area ">
-            <div class="slider-active">
-                 Single Slider -->
-        <!-- <div class="single-slider slider-height d-flex align-items-center">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-xl-6 col-lg-7 col-md-12">
-                                <div class="hero__caption">
-                                    <h1 data-animation="fadeInLeft" data-delay="0.2s">Online learning<br> platform</h1>
-                                    <p data-animation="fadeInLeft" data-delay="0.4s">Build skills with courses, certificates, and degrees online from world-class universities and companies</p>
-                                    <a href="#" class="btn hero-btn" data-animation="fadeInLeft" data-delay="0.7s">Join for Free</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>          
-                </div>
-            </div>
-        </section> -->
         <div class="banner-carousel banner-carousel-1 mb-0">
             <div class="banner-carousel-item ">
                 <div class="body1" style="height: 100vh;">
-                    <div class="main">
-                        <!-- <div class="_search">
-                            <form class="s_form">
-                                <h2 style=" color: #fff;">heading 2</h2> -->
+                    <div class="main">            
                                 <div class="slider-content text-center" >
                                     <div class="container h-100" >
                                         <div class="row align-items-center h-100" >
@@ -436,8 +461,6 @@
                                         </div>
                                     </div>
                                 </div>
-                            <!-- </form>
-                        </div> -->
                         <div id="particles-js"></div>
                     </div>
                 </div>
@@ -522,44 +545,47 @@
         <br id="aboutSection" >
         <div  class="whole-wrap" style="margin-top: 5vh;">
             <div class="container box_1170">
-                <div class="section-top-border">
+                <div class="section-top-border" style="margin-bottom: 0px;margin-top: 0px;">
                     <div class="row">
-                        <div class="col-lg-12">
+                        <div class="col-lg-12" style="float: left;width: 60%;">
                            
-                                <p style="font-size:large;font-style: oblique;font-weight: 400;">
-                                At fosterAI, our mission is to bridge the gap between academic learning and real-world application for IT students. We understand the importance of practical experience in shaping the future technologists of tomorrow. That's why we've crafted specialized internship programs designed to immerse students in the ever-evolving landscape of technology.
+                                <p style="font-size:large;text-align:justify;margin-bottom: 0px;font-style: oblique;font-weight: 400;">
+                                At <b>fosterAI</b> , our mission is to bridge the gap between academic learning and real-world application for IT 
+                                students. We understand the importance of practical experience in shaping the future technologists of tomorrow. 
+                                That's why we've crafted specialized internship programs designed to immerse students in the ever-evolving landscape 
+                                of technology.
 
-<br> <br>Our internship opportunities are not just about fetching coffee or making copies; they're about hands-on engagement with cutting-edge tech projects. Through mentorship from industry professionals and exposure to diverse tech fields, students gain invaluable skills and insights that prepare them for the challenges of today's job market.
-
-Whether it's software development, data analytics, cybersecurity, or artificial intelligence, our tailored programs cater to a wide range of interests and career aspirations. <br> <br> We believe in nurturing talent and providing the necessary support for students to thrive in their chosen paths.
-
-By partnering with leading companies and organizations, we ensure that our interns are exposed to real-world problems and solutions. This practical experience not only enhances their resumes but also instills confidence and competence in tackling complex technical challenges.
-
-At fosterAI, we're not just guiding students towards a promising future; we're empowering them to become the innovators and problem solvers that our world needs. Join us on this journey towards excellence in technology, where every internship opportunity is a stepping stone towards a bright and fulfilling career.
-                            </p>
+                                <br/><br>
+                                Our internship opportunities are not just about fetching coffee or making copies; they're about 
+                                hands-on engagement with cutting-edge tech projects.
+                                 Through mentorship from industry professionals and exposure to diverse tech fields, students gain 
+                                 invaluable skills and insights that prepare them for the challenges of today's job market.
+                                Whether it's software development, data analytics, cybersecurity, or artificial intelligence, 
+                                our tailored programs cater to a wide  range of interests and career aspirations. <br> </p>
                         </div>
+                        <img class="col-lg-12" src="images/intro_image.jpg" style="position: relative; width:30%;margin-left: 7%;"/>
                     </div>
                 </div>
-                <div class="section-top-border">
+                <div class="section-top-border" style="margin-bottom: -40px;margin-top: -40px;">
                     <h3 class="mb-30">Vision</h3>
                     <div class="row">
                         <div class="col-md-4">
                             <img src="images/About-images/vision.jpg"  alt="" class="img-fluid">
                         </div>
                         <div class="col-md-7 mt-sm-20">
-                            <p style="font-size: medium;font-weight: 500;">Our vision at fosterAI is to cultivate a future where every IT student
+                            <p style="font-size: medium;font-style: oblique;;font-weight: 500;">Our vision at fosterAI is to cultivate a future where every IT student
                                  has the opportunity to realize their full potential and make meaningful contributions
                                   to the world of technology. We envision a landscape where innovation knows no bounds,
                                    fueled by a diverse community of empowered and skilled technologists
-                                <br> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;By providing tailored internship programs and fostering a culture of continuous learning and growth, we aim to shape a generation of tech leaders who are not only proficient in their craft but also passionate about using technology for positive change.</p>
+                                <br><br> By providing tailored internship programs and fostering a culture of continuous learning and growth, we aim to shape a generation of tech leaders who are not only proficient in their craft but also passionate about using technology for positive change.</p>
                         </div>
                     </div>
                 </div>
-                <div class="section-top-border text-right" style="padding-top: 0px;padding-bottom: 0px;"">
+                <div class="section-top-border text-right" style="padding-top: 0px;padding-bottom: 0px;text-align: justify;">
                     <h3 class="mb-30">Mission</h3>
                     <div class="row">
-                        <div class="col-md-8">
-                            <p class="text-right" style="font-size: medium;font-weight: 500;">At fosterAI, our mission is to empower
+                        <div class="col-md-8" style="float: left;width: 60%">
+                            <p class="text-right" style="font-size: medium;font-style: oblique;;font-weight: 500;text-align: justify;">At fosterAI, our mission is to empower
                                  IT students with the practical skills, knowledge, and experiences needed to thrive 
                                  in the dynamic world of technology. 
                                  We are dedicated to providing internship opportunities that go beyond traditional learning,
@@ -569,7 +595,7 @@ At fosterAI, we're not just guiding students towards a promising future; we're e
                            
                         </div>
                         <div class="col-md-4">
-                            <img src="images/About-images/missiong.gif" alt="" class="img-fluid" width="50%">
+                            <img src="images/About-images/missiong.gif" alt="" style="float: right;" class="img-fluid" width="50%">
                         </div>
                     </div>
                 </div>
@@ -581,10 +607,6 @@ At fosterAI, we're not just guiding students towards a promising future; we're e
                     <!-- img -->
                     <div class="right-img">
                         <img src="images/About-images/problem1.jpeg" width="70%" />
-                        <!-- <img src="assets/img/gallery/about.png" alt=""> -->
-                        <!-- <div class="video-icon" style="position:relative !important;" >
-                            <a class="popup-video btn-icon" href="https://www.youtube.com/watch?v=up68UAfH0d0"><i class="fas fa-play"></i></a>
-                        </div> -->
                     </div>
                 </div>
                 <div class="right-content1">
@@ -594,7 +616,7 @@ At fosterAI, we're not just guiding students towards a promising future; we're e
                     <!-- section tittle -->
                     <div class="section-tittle section-tittle2 mb-55">
                         <div class="front-text">
-                            <h2 class="">Problems :</h2>
+                            <h2 >Current Scenario in IT</h2>
                         </div>
                     </div>
                     <div class="problemsIconSizes">
@@ -613,7 +635,7 @@ At fosterAI, we're not just guiding students towards a promising future; we're e
                             <img src="assets/img/icon/icons8-finger-50.png" alt="" >
                         </div>
                         <div class="features-caption">
-                            <p>Campus placements happen only for reputed colleges.</p>
+                            <p style="font-family: cursive;">Campus placements happen only for reputed colleges.</p>
                         </div>
                     </div>
 
@@ -761,8 +783,8 @@ At fosterAI, we're not just guiding students towards a promising future; we're e
                 </div>
             </div>
         </section>
-        <section id="services" style="padding-top: 0px;padding-bottom: 0px;">
-            <div class="courses-area section-padding40 fix" style="margin-top: 5vh;">
+        <section id="services" style="padding-top: 0px;padding-bottom: 0px;margin-bottom: 0px;">
+            <div class="courses-area section-padding40 fix" style="margin-top: 2vh;padding-top: 0px;padding-bottom: 0px;">
                 <div class="container">
                     <div class="row justify-content-center">
                         <div class="col-xl-7 col-lg-8">
@@ -910,6 +932,13 @@ At fosterAI, we're not just guiding students towards a promising future; we're e
                     </div>
                     <div class="cat-cap">
                         <h5><a href="services.html">Mr. Urela</a></h5>
+                        <div class="facultyAcc">
+                            <a><i ID="social-linkedIn" class="fa-brands fa-linkedin"></i></a>
+                            <a><i ID="social-facebook" class="fa-brands fa-square-facebook"></i></a>
+                            <a><i ID="social-insta" class="fa-brands fa-square-instagram"></i></a>
+                            <a><i ID="social-whatsapp" class="fa-brands fa-square-whatsapp"></i></a>
+                            <a><i ID="social-twitter" class="fa-brands fa-square-x-twitter"></i></a>
+                        </div>
                         <p>The automated process all your website tasks.</p>
                     </div>
                 </div>
@@ -919,6 +948,13 @@ At fosterAI, we're not just guiding students towards a promising future; we're e
                     </div>
                     <div class="cat-cap">
                         <h5><a href="services.html">Mr. Uttom</a></h5>
+                        <div class="facultyAcc">
+                            <a><i ID="social-linkedIn" class="fa-brands fa-linkedin"></i></a>
+                            <a><i ID="social-facebook" class="fa-brands fa-square-facebook"></i></a>
+                            <a><i ID="social-insta" class="fa-brands fa-square-instagram"></i></a>
+                            <a><i ID="social-whatsapp" class="fa-brands fa-square-whatsapp"></i></a>
+                            <a><i ID="social-twitter" class="fa-brands fa-square-x-twitter"></i></a>
+                        </div>
                         <p>The automated process all your website tasks.</p>
                     </div>
                 </div>
@@ -928,6 +964,13 @@ At fosterAI, we're not just guiding students towards a promising future; we're e
                     </div>
                     <div class="cat-cap">
                         <h5><a href="services.html">Mr. Shakil</a></h5>
+                        <div class="facultyAcc">
+                            <a><i ID="social-linkedIn" class="fa-brands fa-linkedin"></i></a>
+                            <a><i ID="social-facebook" class="fa-brands fa-square-facebook"></i></a>
+                            <a><i ID="social-insta" class="fa-brands fa-square-instagram"></i></a>
+                            <a><i ID="social-whatsapp" class="fa-brands fa-square-whatsapp"></i></a>
+                            <a><i ID="social-twitter" class="fa-brands fa-square-x-twitter"></i></a>
+                        </div>
                         <p>The automated process all your website tasks.</p>
                     </div>
                 </div>
@@ -937,6 +980,13 @@ At fosterAI, we're not just guiding students towards a promising future; we're e
                     </div>
                     <div class="cat-cap">
                         <h5><a href="services.html">Mr. Arafat</a></h5>
+                        <div class="facultyAcc">
+                            <a><i ID="social-linkedIn" class="fa-brands fa-linkedin"></i></a>
+                            <a><i ID="social-facebook" class="fa-brands fa-square-facebook"></i></a>
+                            <a><i ID="social-insta" class="fa-brands fa-square-instagram"></i></a>
+                            <a><i ID="social-whatsapp" class="fa-brands fa-square-whatsapp"></i></a>
+                            <a><i ID="social-twitter" class="fa-brands fa-square-x-twitter"></i></a>
+                        </div>
                         <p>The automated process all your website tasks.</p>
                     </div>
                 </div>
@@ -1071,13 +1121,6 @@ At fosterAI, we're not just guiding students towards a promising future; we're e
                         </div>
                     </div>
                 </div>
-                <!-- <div class="row justify-content-center">
-                    <div class="col-xl-7 col-lg-8">
-                        <div class="section-tittle text-center mt-40">
-                            <a href="#" class="border-btn">Load More</a>
-                        </div>
-                    </div>
-                </div> -->
             </div>
         </div>
 </section>
@@ -1155,7 +1198,7 @@ At fosterAI, we're not just guiding students towards a promising future; we're e
             <div class="footer-area" style="padding-top: 8vh;">
                 <div class="container">
                     <div class="row justify-content-between" style="display: flex; flex-wrap:nowrap">
-                        <div class="col-xl-4 col-lg-5 col-md-4 col-sm-6">
+                        <div class="col-xl-4 col-lg-5 col-md-4 col-sm-6" style="width: 31%;">
                             <div class="single-footer-caption mb-50">
                                 <div class="single-footer-caption mb-30">
                                     <!-- logo -->
@@ -1167,7 +1210,7 @@ At fosterAI, we're not just guiding students towards a promising future; we're e
                                         <div class="footer-pera">
                                             <p style="font-weight: bold;margin-bottom: 10px;">From classrooms to codebases, we foster brilliance in IT.
                                             </p>
-                                            <p style="margin-bottom: auto;">
+                                            <p style="margin-bottom: auto; text-align: justify;">
                                             At FosterAl, we specialize in providing internship opportunities for IT students, 
                                             guiding them towards a promising future in technology. 
                                             </p>
@@ -1175,33 +1218,36 @@ At fosterAI, we're not just guiding students towards a promising future; we're e
                                         </div>
                                     </div>
                                     <!-- social -->
-                                   
-                                    <div class="footer-social">
-                                        <a href="#"><i class="fab fa-twitter"></i></a>
+                                    
+                                  <div class="footer-social" > 
+                                       <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
                                         <a href="#"><i class="fab fa-facebook-f"></i></a>
-                                        <a href="#"><i class="fab fa-pinterest-p"></i></a>
-                                    </div>
+                                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a> 
+                                        <a href="#"><i class="fa-brands fa-whatsapp"></i></a> 
+                                        <a href="#"><i class="fa-brands fa-instagram"></i></a> 
+                                  </div>
+                            
                                     
 
                                 </div>
                             </div>
                         </div>
-                        <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6" style="width: fit-content;">
+                        <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6" style="width: 18%">
                             <div class="single-footer-caption mb-50">
                                 <div class="footer-tittle">
-                                    <h4>Our Services</h4>
+                                    <h4>Qink Links</h4>
                                     <ul>
                                         <li><a href="#">Web Development</a></li>
                                         <li><a href="#">App Development</a></li>
-                                        <li><a href="#">window Applications</a></li>
                                         <li><a href="#">Software Development</a></li>
-                                        <li><a href="#">APIs </a></li>
-                                        <li><a href="#">Programing</a></li>
+                                        <li><a href="#aboutSection">About Us </a></li>
+                                        <li><a href="#">Privacy Policy </a></li>
+                                        <li><a href="#contactUs">Contact Us</a></li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-xl-2 col-lg-4 col-md-4 col-sm-6" style="width: fit-content;">
+                        <div class="col-xl-2 col-lg-4 col-md-4 col-sm-6" style="width: 18%;">
                             <div class="single-footer-caption mb-50">
                                 <div class="footer-tittle">
                                     <h4>Trainings In</h4>
@@ -1230,7 +1276,7 @@ At fosterAI, we're not just guiding students towards a promising future; we're e
                                     <span class="contact-info__icon"><i   style="color: white;" class="ti-tablet"></i></span>
                                     <div class="media-body">
                                         <h3 style="color: white;">+91 9810266776</h3>
-                                        <p style="color: white;">Mon to Fri 10AM to 6AM</p>
+                                        <p style="color: white;">Mon to Fri 10AM to 6PM</p>
                                     </div>
                                 </div>
                                 <div class="media contact-info">
@@ -1241,16 +1287,6 @@ At fosterAI, we're not just guiding students towards a promising future; we're e
                                     </div>
                                 </div>
                             </div>
-
-                            <!-- <div class="single-footer-caption mb-50">
-                                <div class="footer-tittle">
-                                    <ul class="target">
-                                        <li><a href="#" style="font-size: larger;">About Us</a></li>
-                                        <li><a href="#" style="font-size: larger;">Contact Us</a></li>
-                                        <li><a href="#" style="font-size: larger;">Privacy Policy</a></li>
-                                    </ul>
-                                </div>
-                            </div> -->
                         </div>
                     </div>
                 </div>
@@ -1262,13 +1298,8 @@ At fosterAI, we're not just guiding students towards a promising future; we're e
                         
                         <div class="row d-flex align-items-center">                
                             <div class="col-xl-12 ">
-                                <div class="footer-copy-right text-center">
-                                    <div style="float: left;width: 30%;margin-left: -4.5%;">
-                                        <a href="#" style="padding: 10px;">Contact Us</a>
-                                        <a href="#" style="padding: 10px;">Privacy Policy</a>
-                                        <a href="#" style="padding: 10px;">About us</a>
-                                    </div>
-                                    <p style="align-self: left;width: 75%;">
+                                <div class="footer-copy-right text-center">   
+                                    <p >
                                         <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                                      Foster AI Pvt Ltd | &copy; 2024 All rights reserved
                                         <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
