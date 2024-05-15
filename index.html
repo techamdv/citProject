@@ -416,8 +416,8 @@
                             </div>
                         </div>
                         <div class="mb-3">
-                            <label for="validationDefault02" class="form-label">Enter your query</label>
-                                 <textarea rows="6" name="txtQuery" class="form-control" id=""validationDefault02 required></textarea>
+                            <label for="validationDefault05" class="form-label">Enter your query</label>
+                                 <textarea rows="6" name="txtQuery" class="form-control" id="validationDefault05" required></textarea>
                            
                         </div>
                         <div class="mb-3">
@@ -1066,7 +1066,7 @@
 
                                     <a href="course_brochure/DApython.pdf" class="border-btn border-btn4">Download Brochure</a>
                                     
-                                    <button id="btnApplyCourse" class="genric-btn primary-border radius" style="width: 100%;"  onclick="" >Apply Now</button>
+                                    <button id="btnApplyCourse" class="genric-btn primary-border radius" style="width: 100%;"  onclick="internFormShow(1)" >Apply Now</button>
 
                                 </div>
                             </div>
@@ -1084,7 +1084,7 @@
                                         engage effectively with vulnerable children and young people.
                                     </p>
                                     <a href="course_brochure/Mern.pdf" class="border-btn border-btn2">Download Brochure</a>
-                                    <button id="btnApplyCourse" class="genric-btn primary-border radius" style="width: 100%;"  onclick="" >Apply Now</button>
+                                    <button id="btnApplyCourse" class="genric-btn primary-border radius" style="width: 100%;"  onclick="internFormShow(2)" >Apply Now</button>
                                 </div>
 
                             </div>
@@ -1437,7 +1437,17 @@
                 $('#contactUsModal').modal('show');
             });
         });
-        function internFormShow(){
+        function internFormShow()
+        {
+            let txt = document.getElementById("validationDefault02");
+            txt.value("defult");
+            switch(x)
+            {
+                case 1:txt.value("python");
+                case 2:txt.value("web Development");
+            }
+
+
             $('#internshipModal').modal('show');
             }
     </script>
